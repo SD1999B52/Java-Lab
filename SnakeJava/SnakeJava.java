@@ -75,7 +75,7 @@ public class SnakeJava {
 				if ( e.getKeyCode() == 68 ) buttonnum = 2; //кнопка D 2
 				if ( e.getKeyCode() == 87 ) buttonnum = 3; //кнопка W 3
 				if ( e.getKeyCode() == 83 ) buttonnum = 4; //кнопка S 4
-            }
+			}
 		});
 		app.setVisible( true );
 		

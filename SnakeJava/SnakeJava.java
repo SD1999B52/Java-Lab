@@ -223,7 +223,7 @@ public class SnakeJava {
 				Thread.sleep( sleeptime );
 			} catch ( Exception e ) {
 				e.printStackTrace();
-            }
+			}
 		}
 	}
 	

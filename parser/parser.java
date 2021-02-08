@@ -30,6 +30,7 @@ class parser {
 			OutputStream query = connection.getOutputStream();
 			String params = "username=admin&password=kW5i_1bYC6os";
 			query.write( params.getBytes( "UTF-8" ));
+			query.close();
 			String cookie = connection.getHeaderField( "Set-Cookie" );
 			
 			//получаем код страницы

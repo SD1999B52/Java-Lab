@@ -22,8 +22,6 @@ class ex_3 {
 			while ( line != null ) {
 				String[] words = line.split( " " );
 				
-				int wordNum = 0;
-				
 				ArrayList<String[]> lines = new ArrayList<String[]>();
 				for ( int i = 0; i < words.length; i++ ) {
 					if ( firstConsonant( words[i] ) == true ) {
@@ -32,14 +30,12 @@ class ex_3 {
 						inLines[0] = Integer.toString( lineNum );
 						inLines[1] = words[i];
 						lines.add( inLines );
-						
-						wordNum += 1;
 					}
 				}
 				
 				for ( int i = 0; i < lines.size(); i++ ) {
 					String[] inLines = lines.get( i );
-					out.write( "Исходная строка: " + inLines[0] + " Выбрано слов: " + wordNum + " Слово: " + inLines[1] + "\r\n" );
+					out.write( "Исходная строка: " + inLines[0] + " Выбрано слов: " + lines.size() + " Слово: " + inLines[1] + "\r\n" );
 				}
 				
 				lineNum += 1;
